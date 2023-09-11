@@ -1,3 +1,67 @@
-.start{
-    color:red;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+/* HEADER */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto auto; /* Three columns: Left Text, Button 1, Button 2 */
+    align-items: center; /* Vertically center content */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.title {
+    grid-column: 1 / span 1; /* Position in the first column */
+}
+
+.buttons {
+    grid-column: 2 / span 2; /* Position in the last two columns */
+    text-align: right; /* Align buttons to the right */
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px; /* Add spacing between buttons */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*HEADER END */
+
+/*MAIN */
+
+.main {
+    padding: 10% 5% 10% 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal rows */
+    gap: 20px; /* Add some gap between the boxes */
+    height: 400px; /* Optional: Set a height for the grid container */
+    margin: 0 auto; /* Optional: Center the grid container */
+}
+
+.box {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5%;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+/* MAIN */
