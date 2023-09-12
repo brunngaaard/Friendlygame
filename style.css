@@ -18,19 +18,20 @@ body {
 
 .title {
     grid-column: 1 / span 1; /* Position in the first column */
+
 }
 
 .buttons {
-    grid-column: 2 / span 2; /* Position in the last two columns */
+    grid-column: 2 / span 1; /* Position in the last two columns */
     text-align: right; /* Align buttons to the right */
+    margin-right: 10px;
 }
 
 button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 5px 10px;
-    margin-left: 10px; /* Add spacing between buttons */
+    padding: 10px 20px;
     cursor: pointer;
 }
 
@@ -43,7 +44,7 @@ button:hover {
 /*MAIN */
 
 .main {
-    padding: 10% 5% 10% 5%;
+    padding: 10% 5% 5% 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three equal rows */
     gap: 20px; /* Add some gap between the boxes */
@@ -54,14 +55,23 @@ button:hover {
 .box {
     background-color: #007bff;
     color: #fff;
-    padding: 5%;
+    padding: 10%;
     text-align: center;
     border: 1px solid #ccc;
 }
 
 
-
-
-
-
 /* MAIN */
+
+/* LOOK SECTION */
+.look{
+    display: grid;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.look-button{
+    padding: 30px 30px 30px 30px;
+}
+
+/* LOOK SECTION END */
