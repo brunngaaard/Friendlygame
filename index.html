@@ -10,7 +10,21 @@
     <header class="header">
         <div class="title">Your Header Text</div>
         <div class="buttons">
-            <button>Button 1</button>
+            <button id="showFormButton">Register</button>
+            <div class="popup-form" id="popupForm">
+                <div class="form-container">
+                    <span class="close-button" id="closeFormButton">×</span>
+                    <h2>Pop-up Form</h2>
+                    <form>
+                        <!-- Your form fields go here -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
     <main class="main"> 
