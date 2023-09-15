@@ -9,30 +9,41 @@ button.addEventListener("click", function() {
 
 // Make button link to new html page end
 
-// Get references to the button and the pop-up form
+// Get references to the button and the popup form
 const showFormButton = document.getElementById("showFormButton");
 const popupForm = document.getElementById("popupForm");
-const closeFormButton = document.getElementById("closeFormButton");
+const submit = document.getElementById("submit-button")
 
-// Function to show the pop-up form
-function showForm() {
-    popupForm.style.display = "block";
-}
+// Add a click event listener to the button
+showFormButton.addEventListener("click", function () {
+  // Toggle the "hidden" class to show/hide the form
+  if (popupForm.classList.contains("hidden")) {
+    popupForm.classList.remove("hidden");
+  } else {
+    popupForm.classList.add("hidden");
+  } 
 
-// Function to hide the pop-up form
-function hideForm() {
-    popupForm.style.display = "none";
-}
-
-// Event listener to show the form when the button is clicked
-showFormButton.addEventListener("click", showForm);
-
-// Event listener to hide the form when the close button is clicked
-closeFormButton.addEventListener("click", hideForm);
-
-// Event listener to hide the form when clicking outside of it
-window.addEventListener("click", function (event) {
-    if (event.target === popupForm) {
-        hideForm();
-    }
 });
+
+
+// Function to close the form
+function closeForm() {
+  popupForm.classList.add("hidden");
+}
+
+// Add a click event listener to the document
+document.addEventListener("click", function (event) {
+    // Check if the clicked element is not inside the form or the submit button
+    if (!popupForm.contains(event.target) && event.target.tagName !== "BUTTON") {
+      closeForm(); // Close the form
+    }
+  });
+
+ submit.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Process the form data here if needed
+
+    // Close the form
+    popupForm.classList.add("hidden");
+  });
