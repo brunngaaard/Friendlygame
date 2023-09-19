@@ -4,6 +4,9 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -67,14 +70,15 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three equal rows */
     gap: 20px; /* Add some gap between the boxes */
-    height: 400px; /* Optional: Set a height for the grid container */
     margin: 0 auto; /* Optional: Center the grid container */
+    flex: 1;
 }
 
 .box {
     background-color: #007bff;
     color: #fff;
     padding: 10%;
+    height: 275px;
     text-align: center;
     border: 1px solid #ccc;
 }
@@ -87,11 +91,18 @@ button:hover {
     display: grid;
     justify-content: center;
     padding-top: 5px;
+    height: 100px;
+
 }
 
 .look-button{
     padding: 30px 30px 30px 30px;
 }
+
+#btn{
+  height: 50px;
+}
+
 
 /* LOOK SECTION END */
 
@@ -156,6 +167,7 @@ form{
   column-gap: 10px;
   row-gap: 15px;
   margin: 50px 50px 0px 50px;
+  margin-bottom: 75px;
 
  }
 
@@ -168,7 +180,21 @@ form{
  .teams-header{
   text-align: center;
   margin-top: 40px;
-
  }
+
+ /* TEAM PAGE END */
+
+ /* FOOTER */
+
+ footer {
+  /* Your footer styles go here */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+
+ /* FOOTER END */
 
  
