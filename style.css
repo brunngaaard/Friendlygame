@@ -69,18 +69,23 @@ button:hover {
     padding: 10% 5% 5% 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three equal rows */
-    gap: 20px; /* Add some gap between the boxes */
+    gap: 30px; /* Add some gap between the boxes */
     margin: 0 auto; /* Optional: Center the grid container */
     flex: 1;
 }
 
 .box {
-    background-color: #007bff;
+  background-color: aquamarine;
     color: #fff;
     padding: 10%;
     height: 275px;
     text-align: center;
     border: 1px solid #ccc;
+    color: black;
+    border-radius: 10px; /* You can adjust the value to control the roundness */
+  /* Other CSS properties for styling your box */
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2); /* Adjust shadow properties as needed */
+  /* Other CSS properties for styling your box */
 }
 
 
@@ -204,6 +209,18 @@ form{
     padding: 30px;
 }
 
+ /* DOWNLOAD PAGE */
+
+ /* UPCOMING MATCHES */
+
+ .upcoming{
+    display: grid;
+    height: 300px;
+    background-color: #00353f;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ }
 
  /* FOOTER END */
 
