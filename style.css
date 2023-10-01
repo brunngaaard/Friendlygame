@@ -66,10 +66,10 @@ button:hover {
 /*MAIN */
 
 .main {
-    padding: 10% 5% 5% 5%;
+    padding: 7% 5% 7% 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three equal rows */
-    gap: 30px; /* Add some gap between the boxes */
+    gap: 40px; /* Add some gap between the boxes */
     margin: 0 auto; /* Optional: Center the grid container */
     flex: 1;
 }
@@ -86,6 +86,12 @@ button:hover {
   /* Other CSS properties for styling your box */
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2); /* Adjust shadow properties as needed */
   /* Other CSS properties for styling your box */
+}
+
+.box:hover {
+  transform: scale(1.1); /* Increase size on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  cursor: pointer;
 }
 
 
