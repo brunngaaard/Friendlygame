@@ -222,10 +222,23 @@ form{
  .upcoming{
     display: grid;
     height: 300px;
+    padding: 0% 1% 1% 1%;
     background-color: #00353f;
     justify-content: center;
     text-align: center;
     align-items: center;
+    grid-template-columns: repeat(5, 1fr); /* Three equal rows */
+    gap: 5px; /* Add some gap between the boxes */
+    border: 1px solid green;
+ }
+
+ .text {
+  grid-column: span 5; /* This spans two columns */
+  text-align: center; /* Center the text horizontally */
+}
+
+ .match{
+  
  }
 
  /* FOOTER END */
