@@ -238,9 +238,13 @@ form{
 }
 
  .match{
-  
+  border: 1px solid green;
  }
 
+ .icons{
+  width: 80px;
+  height: 80px;
+ }
  /* FOOTER END */
 
  /* For screens between 768px and 992px (typical for tablets) */
