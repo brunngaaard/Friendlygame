@@ -197,12 +197,12 @@ form{
  /* DOWNLOAD PAGE */
 
  .download{
-  display: flex;
-  height: 200px;
+  display: grid;
   justify-content: center;
   text-align: center;
   align-items: center;
   background-color: aquamarine;
+  grid-template-columns: repeat(2, 1fr);
  }
 
  /* FOOTER */
@@ -221,29 +221,36 @@ form{
 
  .upcoming{
     display: grid;
-    height: 300px;
-    padding: 0% 1% 1% 1%;
+    padding: 2% 2% 5% 2%;
     background-color: #00353f;
     justify-content: center;
     text-align: center;
     align-items: center;
-    grid-template-columns: repeat(5, 1fr); /* Three equal rows */
+    grid-template-columns: repeat(4, 1fr); /* Three equal rows */
     gap: 5px; /* Add some gap between the boxes */
     border: 1px solid green;
+    color: white;
  }
 
  .text {
   grid-column: span 5; /* This spans two columns */
   text-align: center; /* Center the text horizontally */
+  padding-bottom: 2%;
 }
 
  .match{
-  border: 1px solid green;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
  }
 
  .icons{
   width: 80px;
   height: 80px;
+ }
+
+ .match button{
+  grid-column: 2;
+
  }
  /* FOOTER END */
 
