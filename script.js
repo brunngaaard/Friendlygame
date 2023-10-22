@@ -48,4 +48,26 @@ document.addEventListener("click", function (event) {
    });
 
 
+   // Get a reference to the search input element
+const searchInput = document.getElementById("searchInput");
+
+// Get a collection of all divs with the class "info-div"
+const infoDivs = document.querySelectorAll(".info-div");
+
+// Add an event listener to the search input
+searchInput.addEventListener("input", function() {
+    const searchText = searchInput.value.toLowerCase();
+
+    // Loop through each info-div and hide or show them based on the search text
+    infoDivs.forEach(div => {
+        const divText = div.textContent.toLowerCase();
+        if (divText.includes(searchText)) {
+            div.style.display = "block"; // Show the div
+        } else {
+            div.style.display = "none"; // Hide the div
+        }
+    });
+});
+
+
   
