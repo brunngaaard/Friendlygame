@@ -244,14 +244,15 @@ form{
  }
 
  .icons{
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height:60px;
  }
 
  .match button{
   grid-column: 2;
 
  }
+
  /* FOOTER END */
 
  /* For screens between 768px and 992px (typical for tablets) */
