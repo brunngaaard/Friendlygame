@@ -7,6 +7,7 @@
        window.location.href = "teams.html";
    });
 
+  
    document.addEventListener("DOMContentLoaded", () => {
     const openPopupButton = document.getElementById("openPopup");
     const closePopupButton = document.getElementById("closePopup");

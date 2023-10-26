@@ -47,7 +47,12 @@ a:visited {
     grid-column: 2 / span 1; /* Position in the last two columns */
     text-align: right; /* Align buttons to the right */
     margin-right: 10px;
+    color:green;
+    
 }
+ .buttons button{
+  background-color: green;
+ }
 
 button {
     background-color: #007bff;
@@ -55,6 +60,9 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 button:hover {
@@ -214,7 +222,7 @@ button#openPopup:hover {
     justify-content: center;
     text-align: center;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr); /* Three equal rows */
+    grid-template-columns: repeat(2, 1fr); /* Three equal rows */
     gap: 5px; /* Add some gap between the boxes */
     border: 1px solid green;
     color: white;
@@ -228,7 +236,10 @@ button#openPopup:hover {
 
  .match{
   display: grid;
-  grid-template-columns: repeat(4, 1fr)
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
  }
 
  .icons{

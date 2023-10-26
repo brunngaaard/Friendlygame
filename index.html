@@ -13,13 +13,13 @@
     <header class="header">
         <div class="title">Friendly Game</div>
         <div class="buttons">
-            <button id="openPopup">Register</button>
+            <button id="openPopup">Registrera lag</button>
         </div>
     </header>
     <div id="popup" class="popup" hidden>
         <div class="popup-content">
             <span id="closePopup" class="close">X</span>
-            <h2>Sign Up</h2>
+            <h2>Registrera ditt lag</h2>
             <form id="signupForm">
                 <div class="form-row">
                     <label for="firstName">First Name:</label>
@@ -37,42 +37,27 @@
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password">
                 </div>
+                <button type="submit">Submit</button>
             </form>
         </div>  
     </div>
     <main class="main"> 
         <div class="box">
-            <h1>Register ur team</h1>
+            <h1>Register ditt lag</h1>
         </div>
         <div class="box">
-            <h1>Find a team that suits you</h1>
+            <h1>Hitta ett lag som passar er</h1>
         </div>
         <div class="box">
-            <h1>Let the best team win</h1>
+            <h1>Skicka en förfrågan</h1>
         </div>
     </main>
-        
         <div class="upcoming">
             <div class="text">
-                <h1>Upcoming matches</h1>
+                <h1>Leta efter lag eller se vilka matcher som ska spelas</h1>
             </div>
             <div class="match">
-                <a href="https://www.flaticon.com/free-icons/manchester-city" title="manchester city icons"></a>
-                <img class="icons" src="./Icons/manchester-city.png">
-                <p>vs</p>
-                <img class="icons" src="./Icons/chelsea.png">
-            </div>
-            <div class="match">
-                <a href="https://www.flaticon.com/free-icons/manchester-city" title="manchester city icons"></a>
-                <img class="icons" src="./Icons/madrid.png">
-                <p>vs</p>
-                <img class="icons" src="./Icons/barcelona.png">
-            </div>
-            <div class="match">
-                <a href="https://www.flaticon.com/free-icons/manchester-city" title="manchester city icons"></a>
-                <img class="icons" src="./Icons/united.png">
-                <p>vs</p>
-                <img class="icons" src="./Icons/arsenal.png">
+                <button id="upcomingButton">Upcoming matches</button>
             </div>
             <div class="match">
                 <button id="myButton">Avaiable teams</button>
