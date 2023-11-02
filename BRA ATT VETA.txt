@@ -1,0 +1,1 @@
+margin-top: auto; kommer göra så att din footer håller sig till botton, om man använder flexbox

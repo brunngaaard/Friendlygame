@@ -22,22 +22,34 @@
             <h2>Registrera ditt lag</h2>
             <form id="signupForm">
                 <div class="form-row">
-                    <label for="firstName">First Name:</label>
+                    <label for="firstName">Lagnamn:</label>
                     <input type="text" id="firstName" name="firstName">
                 </div>
                 <div class="form-row">
-                    <label for="lastName">Last Name:</label>
+                    <label for="lastName">Distrikt:</label>
                     <input type="text" id="lastName" name="lastName">
+                </div>
+                <div class="form-row">
+                <label for="numberSelect">Division:</label>
+                <select id="numberSelect" name="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
                 </div>
                 <div class="form-row">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email">
                 </div>
                 <div class="form-row">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
+                    <label for="number">Telefonnummer:</label>
+                    <input  id="number" name="number">
                 </div>
-                <button type="submit">Submit</button>
+                    <p>Skicka in din ansökan, vi kommer kontrollera att allt stämmer och registrera ditt lag till poolen med tillgängliga lag</p>
+                <button class="sök-knapp" type="submit">Ansök</button>
             </form>
         </div>  
     </div>
@@ -57,10 +69,11 @@
                 <h1>Leta efter lag eller se vilka matcher som ska spelas</h1>
             </div>
             <div class="match">
-                <button id="upcomingButton">Upcoming matches</button>
+                <button id="upcomingButton">Kommande matcher</button>
             </div>
             <div class="match">
-                <button id="myButton">Avaiable teams</button>
+                <button id="myButton">Lediga Lag
+                </button>
             </div>
         </div>
        

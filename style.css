@@ -142,6 +142,49 @@ button:hover {
   display: grid;
 }
 
+#signupForm{
+ justify-content: center;
+ align-items: center;
+  
+}
+
+.form-row{
+  display: flex;
+  flex-direction: column;
+  size-adjust: center;
+  text-align: center;
+  margin: 10px;
+  align-items: center;
+}
+
+
+.form-row input{
+  border-radius: 10px;
+  height: 25px;
+  border: 1px solid aquamarine;
+}
+
+.form-row select{
+  border-radius: 10px;
+  height: 25px;
+  border: 1px solid aquamarine;
+}
+
+.form-row select, input {
+  width: 300px;
+  
+}
+
+.sök-knapp{
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+#numberSelect{
+  width: 50px;
+}
+
+
 .close {
   position: absolute;
   top: 10px;
@@ -188,6 +231,13 @@ button#openPopup:hover {
   margin-top: 40px;
  }
 
+ #searchInput{
+  margin: 0 auto;
+    display: block;
+  
+  
+ }
+
  /* TEAM PAGE END */
 
  /* DOWNLOAD PAGE */
@@ -209,6 +259,7 @@ button#openPopup:hover {
     color: #fff;
     text-align: center;
     padding: 30px;
+    margin-top: auto;
 }
 
  /* DOWNLOAD PAGE */
